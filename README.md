@@ -16,6 +16,7 @@ docker run -d --restart unless-stopped \
             --net=host \
             --ipc=host \
             --pid=host \
+            -p 5666:5666 \
             -e NAGIOS_SERVER="1.2.3.4" \
             aviyam/nrpe:1.0
 ```
